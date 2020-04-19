@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 IMAGE_DIR = ''
 # ISO country code
 # eg. 'en-US', 'en-NZ', 'zh-CN' or just leave it
-COUNTRY_CODE = 'zh-CN'
+COUNTRY_CODE = ''
 
 # Apple Script to set wallpaper
 SCRIPT = """/usr/bin/osascript<<END
@@ -135,7 +135,7 @@ def main():
             if flag_download_only:
                 downloadImage(imageUrl, filePath, True)
             else:
-                downloadImage(url, filePath)
+                downloadImage(imageUrl, filePath)
     except requests.HTTPError as e:
         print('Error ' + str(e.code) + '. Please try again later...')
 

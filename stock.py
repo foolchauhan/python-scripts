@@ -1,5 +1,5 @@
 import requests, json, sys
-# API_KEY = 'W8IVI1JLBJD8S619' 
+# API_KEY = 'xxxxxxxx' 
 API_KEY = sys.argv[1]
 
 STOCK_NSE = 'NSE'

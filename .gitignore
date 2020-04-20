@@ -1,3 +1,5 @@
 *.jpg
 venv/
+timer-app/dist/
+timer-app/build/
 

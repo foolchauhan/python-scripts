@@ -3,3 +3,4 @@ venv/
 timer-app/dist/
 timer-app/build/
 
+.DS_Store

@@ -6,6 +6,7 @@ maybe set it as desktop wallpaper
 
 import requests, json, os, sys
 from bs4 import BeautifulSoup
+from appscript import *
 
 # Configurations
 # Location to save downloaded wallpapers
@@ -59,6 +60,7 @@ def setWallpaper(filePath):
     if os.path.isfile(filePath):
         import subprocess
         subprocess.Popen(SCRIPT%filePath, shell=True)
+        app('System Events').desktops.picture.set(filePath)
         print('Wallpaper set to ' + filePath)
 
 def imageDownloader():

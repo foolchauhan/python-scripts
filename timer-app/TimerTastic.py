@@ -12,7 +12,7 @@ class TimerTasticApp(object):
             "set": "Set Timer",
             "setMessage": "Set Message",
             "break_message": "Time is up! Take a break :)",
-            "interval": 1500
+            "interval": 300
         }
 
         self.app = rumps.App(self.config["app_name"], "⏰" )
@@ -67,6 +67,7 @@ class TimerTasticApp(object):
         self.start_pause_button.title = self.config["start"]
 
     def set_timer(self, sender):
+        
         self.interval = 20
         self.set_up_menu()
 
